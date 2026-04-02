@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- CONTAINER ISI -->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- SEGITIGA -->
+            <EditText
+                android:id="@+id/etAlas"
+                android:hint="Masukkan Alas"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <EditText
+                android:id="@+id/etTinggi"
+                android:hint="Masukkan Tinggi"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnHitungSegitiga"
+                android:text="Hitung Luas Segitiga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvHasilSegitiga"
+                android:text="Hasil Segitiga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- KUBUS -->
+            <EditText
+                android:id="@+id/etSisi"
+                android:hint="Masukkan Sisi"
+                android:inputType="numberDecimal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <Button
+                android:id="@+id/btnHitungKubus"
+                android:text="Hitung Volume Kubus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/tvHasilKubus"
+                android:text="Hasil Kubus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
