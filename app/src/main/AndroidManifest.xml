@@ -15,6 +15,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Azracore">
         <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InputEmailActivity"
+            android:exported="false" />
+        <activity
             android:name=".WebViewActivity"
             android:exported="false" />
         <activity
