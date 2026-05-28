@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengaturan App"
+        android:textSize="28sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#1A237E" />
+
+    <View
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:layout_marginTop="8dp"
+        android:background="#0096FF" />
+
+    <ListView
+        android:id="@+id/lvSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="24dp"
+        android:divider="#F0F0F0"
+        android:dividerHeight="1dp" />
+
+</LinearLayout>

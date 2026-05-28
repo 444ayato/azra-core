@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -14,8 +15,8 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login2)
 
-        val etUsername = findViewById<TextInputEditText>(R.id.etUsernameLogin) // Pastikan ID ini ada di XML
-        val etPassword = findViewById<TextInputEditText>(R.id.etPasswordLogin) // Pastikan ID ini ada di XML
+        val etUsername = findViewById<EditText>(R.id.etUsernameLogin)
+        val etPassword = findViewById<EditText>(R.id.etPasswordLogin)
         val btnLogin = findViewById<Button>(R.id.btnLogin)
         val btnRegisterGmail = findViewById<Button>(R.id.btnRegisterGmail)
 

@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         val bottomNav = findViewById<BottomNavigationView>(R.id.bottom_navigation)
 
-        // Tampilkan Home saat pertama buka
         loadFragment(HomeFragment())
 
         bottomNav.setOnItemSelectedListener { item ->
@@ -20,6 +19,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_home -> loadFragment(HomeFragment())
                 R.id.nav_about -> loadFragment(AboutFragment())
                 R.id.nav_profile -> loadFragment(ProfileFragment())
+                R.id.nav_settings -> loadFragment(SettingsFragment()) // Menu Baru
             }
             true
         }

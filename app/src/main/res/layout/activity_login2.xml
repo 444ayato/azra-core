@@ -83,6 +83,7 @@
                 android:textSize="16sp" />
 
             <ImageView
+                android:id="@+id/ivTogglePassword"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:src="@android:drawable/ic_menu_view"
@@ -111,7 +112,7 @@
             app:cornerRadius="12dp"
             app:elevation="4dp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnRegisterGmail"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:layout_width="match_parent"

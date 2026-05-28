@@ -58,12 +58,48 @@
                 android:text="Full-stack Developer &amp; UI/UX Enthusiast"
                 android:textColor="#0096FF"
                 android:textStyle="bold"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:layout_marginBottom="16dp"/>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:singleLine="false"
+                app:chipSpacingHorizontal="8dp"
+                android:gravity="center">
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Android Kotlin"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipStrokeColor="#0096FF"
+                    app:chipStrokeWidth="1dp"
+                    android:textColor="#0096FF"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Web Project"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipStrokeColor="#1A237E"
+                    app:chipStrokeWidth="1dp"
+                    android:textColor="#1A237E"/>
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UI/UX"
+                    app:chipBackgroundColor="@android:color/white"
+                    app:chipStrokeColor="#0096FF"
+                    app:chipStrokeWidth="1dp"
+                    android:textColor="#0096FF"/>
+            </com.google.android.material.chip.ChipGroup>
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="24dp"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="6dp">
 
