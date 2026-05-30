@@ -17,44 +17,37 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:gravity="center"
+        android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="32dp"
-        android:layout_marginBottom="20dp">
+        android:padding="16dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="You want\nProfessional, here\nyou go!"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="Program\nBina Desa"
             android:textColor="@color/white"
-            android:textSize="36sp"
+            android:textSize="32sp"
             android:fontFamily="sans-serif-black"
             android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnWebView"
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutHome"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="40dp"
-            android:backgroundTint="#0096FF"
-            android:text="Web View / Desktop View"
-            android:textAllCaps="false"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:cornerRadius="12dp" />
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:tabTextColor="#B0FFFFFF"
+            app:tabSelectedTextColor="@color/white"
+            app:tabIndicatorColor="@color/white"
+            app:tabIndicatorHeight="3dp" />
 
-        <Button
-            android:id="@+id/btnLogout"
-            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerHome"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="12dp"
-            android:text="Logout"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            app:cornerRadius="12dp"
-            app:strokeColor="@color/white" />
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp" />
+
     </LinearLayout>
 </RelativeLayout>

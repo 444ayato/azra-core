@@ -4,11 +4,7 @@ plugins {
 
 android {
     namespace = "com.example.azra_core"
-    compileSdk {
-        version = release(36) {
-            minorApiLevel = 1
-        }
-    }
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.azra_core"
@@ -47,4 +43,7 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+    // 🟢 HAPUS implementation(libs.glide) LALU GANTI DENGAN TEKS MANUAL INI:
+    implementation("com.github.bumptech.glide:glide:4.16.0")
 }
