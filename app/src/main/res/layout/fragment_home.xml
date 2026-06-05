@@ -21,21 +21,59 @@
         android:orientation="vertical"
         android:padding="16dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:text="Program\nBina Desa"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                android:fontFamily="sans-serif-black"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnLogoutHome"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="LOGOUT"
+                android:textColor="#FF3B30"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:icon="@android:drawable/ic_lock_power_off"
+                app:iconTint="#FF3B30" />
+        </RelativeLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
-            android:layout_marginBottom="16dp"
-            android:text="Program\nBina Desa"
-            android:textColor="@color/white"
-            android:textSize="32sp"
-            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="12dp"
+            android:text="Berita Global Terkini"
+            android:textColor="#0096FF"
+            android:textSize="14sp"
             android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBeritaHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="4dp"
+            android:clipToPadding="false" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tabLayoutHome"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
             android:background="@android:color/transparent"
             app:tabTextColor="#B0FFFFFF"
             app:tabSelectedTextColor="@color/white"
