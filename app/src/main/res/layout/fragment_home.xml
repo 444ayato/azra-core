@@ -52,6 +52,16 @@
                 app:iconTint="#FF3B30" />
         </RelativeLayout>
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnAjukanProyekMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Form Pengajuan Lokasi Proyek Baru"
+            android:textColor="@color/white"
+            android:backgroundTint="#0096FF"
+            app:icon="@android:drawable/ic_menu_add" />
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
